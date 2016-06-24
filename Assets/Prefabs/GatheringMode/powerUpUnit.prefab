@@ -81,7 +81,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 193736}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.4799995, y: 6.80000019, z: 0}
+  m_LocalPosition: {x: -15.48, y: 6.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 462362}
@@ -109,7 +109,7 @@ Transform:
   m_GameObject: {fileID: 198006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2}
-  m_LocalScale: {x: .899999976, y: .899999976, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 406470}
   m_RootOrder: 1
@@ -120,8 +120,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 145392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0020942688, y: -.00620305538, z: -1}
-  m_LocalScale: {x: .5, y: .5, z: .203627005}
+  m_LocalPosition: {x: -0.0020942688, y: -0.0062030554, z: -1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.203627}
   m_Children: []
   m_Father: {fileID: 406470}
   m_RootOrder: 0
@@ -143,8 +143,10 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
@@ -181,7 +183,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.54999995, y: 1.75, z: 1}
+  m_Size: {x: 1.55, y: 1.75, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &8222574
 AudioSource:
@@ -198,6 +200,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -222,6 +225,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -232,6 +236,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -242,6 +247,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -252,6 +258,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &9517856
 Animator:
   serializedVersion: 3
@@ -304,15 +311,17 @@ TrailRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Time: 1
   m_StartWidth: 1
-  m_EndWidth: .5
+  m_EndWidth: 0.5
   m_Colors:
     m_Color[0]:
       serializedVersion: 2
@@ -329,7 +338,7 @@ TrailRenderer:
     m_Color[4]:
       serializedVersion: 2
       rgba: 44492
-  m_MinVertexDistance: .100000001
+  m_MinVertexDistance: 0.1
   m_Autodestruct: 0
 --- !u!114 &11476344
 MonoBehaviour:
@@ -353,16 +362,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff86ce9d953074449638fc346b2b59e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualColor1: {r: .588235319, g: .588235319, b: .588235319, a: 1}
-  visualColor2: {r: .601554096, g: .263624609, b: .779411793, a: 1}
-  visualColor3: {r: .257352948, g: .35466525, b: 1, a: 1}
+  visualColor1: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+  visualColor2: {r: 0.6015541, g: 0.2636246, b: 0.7794118, a: 1}
+  visualColor3: {r: 0.25735295, g: 0.35466525, b: 1, a: 1}
   visualColor4: {r: 0, g: 1, b: 1, a: 1}
   visualColor5: {r: 0, g: 1, b: 0, a: 1}
   visualColor6: {r: 1, g: 0, b: 1, a: 1}
   visualColor7: {r: 1, g: 0, b: 0, a: 1}
   visualColor8: {r: 1, g: 1, b: 1, a: 1}
-  visualColor9: {r: 1, g: .921568632, b: .0156862754, a: 1}
-  visualColor10: {r: 1, g: .724137902, b: 0, a: 1}
+  visualColor9: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  visualColor10: {r: 1, g: 0.7241379, b: 0, a: 1}
 --- !u!114 &11489268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -375,19 +384,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerupLifeTime: 10
-  powerupTappedTime: .400000006
+  powerupTappedTime: 0.4
   mySprite: {fileID: 21283590}
-  addTimeColor: {r: 0, g: 0, b: 0, a: 0}
-  invincibleColor: {r: 0, g: 0, b: 0, a: 0}
-  elementMultiplyColor: {r: 0, g: 0, b: 0, a: 0}
-  slowFallColor: {r: 0, g: 0, b: 0, a: 0}
-  totalMultiplierColor: {r: 0, g: 0, b: 0, a: 0}
-  invincibleConversionColor: {r: 0, g: 0, b: 0, a: 0}
-  laneConversionColor: {r: 0, g: 0, b: 0, a: 0}
-  totalConversionColor: {r: 0, g: 0, b: 0, a: 0}
-  totalLaneConversionColor: {r: 0, g: 0, b: 0, a: 0}
-  collectAllColor: {r: 0, g: 0, b: 0, a: 0}
-  bucketShieldColor: {r: .282352954, g: .721568644, b: .788235307, a: 1}
   powerUpTextAnimator: {fileID: 0}
   laneAnimators:
   - {fileID: 0}
@@ -413,14 +411,18 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300024, guid: b7acea8f360119e4d86e0dcf1ae732c6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!212 &21283590
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -439,14 +441,18 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: cf2295238041e4f329fcadc63dc87870, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!212 &21289562
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -465,21 +471,33 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 73d5620452ebd4457bf104773adae570, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: panLevelCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: reverbZoneMixCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 193736}

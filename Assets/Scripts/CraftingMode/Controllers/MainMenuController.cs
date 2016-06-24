@@ -33,7 +33,6 @@ using System.Collections.Generic;
 	//public reference to the current element and panel
 	public string activeElement;
 	public Vector3 activePosition;
-	private Vector3 activePositionOffset = new Vector3 (-29, 73, 0);//offset due to art asset positioning for hint panel
 
 	//the overall percent unlocked 
 	public Text numberUnlocked;
@@ -355,7 +354,7 @@ using System.Collections.Generic;
 			hintPanel.transform.FindChild("NotYetPurchased/PurchaseCost/myAmount"+i.ToString()).GetComponent<Text>().text = PlayerPrefs.GetInt (hintPanel.GetComponent<PurchaseHint> ().getCostElemType(i)).ToString();
 		}
 		hintPanel.transform.FindChild ("AlreadyPurchased/Name").GetComponent<Text> ().text = activeElement;
-		hintPanel.transform.position = activePosition+activePositionOffset;
+		hintPanel.transform.position = activePosition;
 	}
 
 
